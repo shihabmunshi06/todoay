@@ -1,0 +1,22 @@
+@use "../../base/abstracts";
+
+.aside-dark-bg {
+  border-right: 1px solid var(--text-color-lightest);
+
+  .aside {
+    > * {
+      margin-bottom: 4rem;
+    }
+  }
+  button {
+    background-color: red;
+    color: black;
+    height: 4rem;
+    width: 12rem;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+}

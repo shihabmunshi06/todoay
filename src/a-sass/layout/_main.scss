@@ -1,0 +1,12 @@
+@use "../base/abstracts";
+
+.main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  color: var(--text-color);
+
+  > * {
+    padding: 2rem 3rem;
+  }
+}

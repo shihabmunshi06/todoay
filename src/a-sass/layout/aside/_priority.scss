@@ -1,0 +1,77 @@
+@use "../../base/abstracts";
+
+.priority-shadow {
+  .priority {
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color-lightest);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0 1rem;
+    legend {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      clip: rect(0, 0, 0, 0);
+      overflow: hidden;
+    }
+
+    .label-input-wrapper {
+      border-bottom: 1px solid var(--text-color-lightest);
+      display: flex;
+      align-items: center;
+      height: 4rem;
+      padding: 1rem 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    input {
+      border: 1px solid var(--text-color-lightest);
+      height: 1.4rem;
+      width: 1.4rem;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:checked {
+        border: none;
+        & ~ label {
+          color: var(--text-color-light);
+        }
+      }
+    }
+    #top {
+      &:hover {
+        border: 2px solid var(--blue);
+      }
+      &:checked {
+        background-color: var(--blue);
+      }
+    }
+    #mid {
+      &:hover {
+        border: 2px solid var(--green);
+      }
+      &:checked {
+        background-color: var(--green);
+      }
+    }
+    #low {
+      &:hover {
+        border: 2px solid var(--orange);
+      }
+      &:checked {
+        background-color: var(--orange);
+      }
+    }
+    label {
+      color: var(--text-color-lightest);
+      margin-left: 0.6rem;
+      cursor: pointer;
+    }
+  }
+}

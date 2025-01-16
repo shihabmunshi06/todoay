@@ -1,0 +1,49 @@
+:root {
+  --maybe: hsl(207, 90%, 54%);
+  --maybe2: #4caf50;
+
+  --main-backgroud: #fafafa;
+  --main-backgroud: #f5f4ee;
+  --main-background: white;
+
+  --background-color: #f5f5f5;
+  --background-color: hsl(60, 17%, 91%);
+  --background-color: hsl(60, 17%, 98%);
+  --background-color: white;
+
+  --orange: hsl(6, 83%, 65%);
+
+  --blue: hsl(213, 69%, 65%);
+
+  --green: hsl(122, 39%, 49%);
+
+  --red: hsl(347, 100%, 69%);
+  --red: hsl(0, 100%, 65%);
+
+  --yellow: hsl(45, 100%, 67%);
+  --yellow: hsl(42, 100%, 50%);
+
+  --purple: hsl(261, 62%, 64%);
+  --teal: #009688;
+
+  --text-color: hsl(210, 10%, 10%);
+  --text-color: black;
+  --text-color-light: #454849;
+  --text-color-lighter: #747677;
+  --text-color-lightest: #a2a3a4;
+
+  --border-color: black;
+  --border-color: #747677;
+}
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($juco: center, $alite: center) {
+  display: flex;
+  justify-content: $juco;
+  align-items: $alite;
+}

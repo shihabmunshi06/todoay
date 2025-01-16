@@ -1,0 +1,33 @@
+@media screen and (max-width: 850px) {
+  .main {
+    display: block;
+  }
+
+  .aside-dark-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: hsla(0, 0%, 0%, 15%);
+
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transition: clip-path 0.2s ease;
+    &.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .aside {
+      background-color: crimson;
+      width: fit-content;
+      height: 100%;
+    }
+    button {
+      display: block;
+    }
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+}
