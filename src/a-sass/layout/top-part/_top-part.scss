@@ -1,0 +1,14 @@
+@use "../../base/abstracts";
+
+.top-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 0 2rem;
+
+  .right-side {
+    display: flex;
+    gap: 2rem;
+  }
+}

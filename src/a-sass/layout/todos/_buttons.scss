@@ -1,0 +1,47 @@
+@use "../../base/abstracts";
+
+.todo-card-shadow {
+  &.top {
+    svg {
+      fill: var(--blue);
+    }
+  }
+  &.mid {
+    svg {
+      fill: var(--green);
+    }
+  }
+  &.low {
+    svg {
+      fill: var(--orange);
+    }
+  }
+  .button-wrapper {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+
+    width: 100%;
+    .delete,
+    .edit,
+    .complete {
+      @extend %flex;
+      padding: 0.4rem;
+      border-radius: 2px;
+      background-color: #EBEBEB;
+      svg {
+        height: 2rem;
+        width: 2rem;
+        fill: #6C6C6C;
+      }
+    }
+    .edit {
+      img {
+        margin-top: 0.2rem;
+        height: 1.78rem;
+        width: 1.78rem;
+      }
+    }
+  }
+}

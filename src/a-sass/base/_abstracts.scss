@@ -10,18 +10,25 @@
   --background-color: hsl(60, 17%, 91%);
   --background-color: hsl(60, 17%, 98%);
   --background-color: white;
-
-  --orange: hsl(6, 83%, 65%);
-
-  --blue: hsl(213, 69%, 65%);
-
-  --green: hsl(122, 39%, 49%);
+  // --background-color: #F0F2FA;
 
   --red: hsl(347, 100%, 69%);
   --red: hsl(0, 100%, 65%);
 
+  --orange: hsl(6, 83%, 65%);
+  --orange-dark: #dd0b1a;
+  --orange-light: hsl(6, 83%, 75%);
+
+  --blue: hsl(213, 69%, 65%);
+  --blue-light: hsl(213, 69%, 75%);
+
+  --green: hsl(122, 39%, 49%);
+  --green-dark: #15a674;
+  --green-light: hsl(122, 39%, 75%);
+
   --yellow: hsl(45, 100%, 67%);
   --yellow: hsl(42, 100%, 50%);
+  --yellow-dark: #fe9e19;
 
   --purple: hsl(261, 62%, 64%);
   --teal: #009688;
@@ -33,7 +40,6 @@
   --text-color-lightest: #a2a3a4;
 
   --border-color: black;
-  --border-color: #747677;
 }
 
 %flex {

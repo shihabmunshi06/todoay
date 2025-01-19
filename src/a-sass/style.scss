@@ -2,6 +2,7 @@
 @use "./layout/main" as main;
 @use "./layout/aside/zindex" as asideIndex;
 @use "./layout/todos/zindex" as todosIndex;
+@use "./layout/input-form/zindex" as inputFormIndex;
 @use "./layout/top-part/zindex" as topPartIndex;
 @use "./components/zindex" as componentsIndex;
 @use "./media/media.scss" as medaiaIndex;

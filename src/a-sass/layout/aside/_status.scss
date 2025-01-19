@@ -1,46 +1,14 @@
 @use "../../base/abstracts";
-
-.status-shadow {
+.aside {
   .status {
-    background-color: var(--background-color);
-    border: 1px solid var(--text-color-lightest);
-    border-radius: 8px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    padding: 0 1rem;
-    legend {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      clip: rect(0, 0, 0, 0);
-      overflow: hidden;
-    }
-
     .input-label-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      border-bottom: 1px solid var(--text-color-lightest);
-      height: 4rem;
-      padding: 1rem 0;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
       &.active {
-        label {
-          color: var(--text-color-light);
-        }
         .input-checkmark-wrapper {
-          input{
+          input {
             border-color: var(--text-color-light);
           }
           svg {
             display: inline-block;
-            fill: var(--text-color-light);
           }
         }
       }
@@ -68,12 +36,8 @@
 
           height: 1.4rem;
           width: 1.4rem;
-          fill: var(--text-color-lightest);
+          fill: var(--text-color-light);
         }
-      }
-      label {
-        color: var(--text-color-lightest);
-        cursor: pointer;
       }
     }
   }

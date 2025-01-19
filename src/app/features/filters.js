@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     status: "all",
-    priority: []
+    priority: [],
+    date: "today"
 }
 
 const filtersSlice = createSlice({
@@ -19,8 +20,11 @@ const filtersSlice = createSlice({
                 state.priority.push(action.payload);
             }
         },
+        setDate: (state, action) => {
+            state.date = action.payload
+        }
     }
 })
 
 export default filtersSlice.reducer
-export const { setStatus, setPriority } = filtersSlice.actions
+export const { setStatus, setPriority, setDate } = filtersSlice.actions

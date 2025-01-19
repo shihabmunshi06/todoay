@@ -6,7 +6,11 @@
   grid-template-columns: 22rem 1fr;
   color: var(--text-color);
 
-  > * {
-    padding: 2rem 3rem;
+  .aside-dark-bg {
+    padding: 0 2rem 0 3rem;
+  }
+
+  .right {
+    padding: 0 3rem 0 2rem;
   }
 }

@@ -73,8 +73,16 @@ select {
   appearance: none;
   resize: none;
 }
-button {
+button,
+label,
+input {
   cursor: pointer;
+}
+
+label {
+  &::first-letter {
+    text-transform: capitalize;
+  }
 }
 
 textarea {

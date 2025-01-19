@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 
-import TodoCard from "../../components/TodoCard"
+import TodoCard from "../../components/todocard/TodoCard"
 
 export default function Todos() {
 

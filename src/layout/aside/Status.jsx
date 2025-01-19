@@ -7,38 +7,35 @@ export default function Status() {
     const fetchedStatus = useSelector(state => state.filters.status);
 
     const dispatch = useDispatch();
-    const statuses = [
-        { label: "All", value: "all" },
-        { label: "Complete", value: "complete" },
-        { label: "Incomplete", value: "incomplete" },
-    ];
+    const statuses = ["all", "complete", "incomplete",];
 
     const handleClick = (value) => {
         dispatch(setStatus(value));
     };
 
     return (
-        <div className="status-shadow">
-            <fieldset className="status">
-                <legend>Status</legend>
-                {statuses.map((status) => (
-                    <div className={`input-label-wrapper ${status.value} ${status.value === fetchedStatus ? "active" : ""}`} key={status.value}>
-                        <div className="input-checkmark-wrapper">
-                            <input
-                                type="radio"
-                                name="status"
-                                id={status.value}
-                                value={status.value}
-                                checked={fetchedStatus === status.value}
-                                onChange={() => handleClick(status.value)}
-                            />
-                            <Checkmark />
-                        </div>
-                        <label htmlFor={status.value}>{status.label}</label>
+        <fieldset className="status">
+            <legend>Status</legend>
+            {statuses.map((status) => (
+                <div
+                    key={status}
+                    className={`input-label-wrapper ${status} ${status === fetchedStatus ? "active" : ""}`}
+                >
+                    <div className="input-checkmark-wrapper">
+                        <input
+                            type="radio"
+                            name="status"
+                            id={status}
+                            value={status}
+                            checked={fetchedStatus === status}
+                            onChange={() => handleClick(status)}
+                        />
+                        <Checkmark />
                     </div>
-                ))}
-            </fieldset>
-        </div>
+                    <label htmlFor={status}>{status}</label>
+                </div>
+            ))}
+        </fieldset>
 
     );
 }

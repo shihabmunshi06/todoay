@@ -1,24 +1,43 @@
 @use "../../base/abstracts";
 
 .aside {
-  nav {
-    border: 1px solid var(--text-color-lightest);
-    border-radius: 10px;
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      padding: 0 1rem;
-      li {
-        border-bottom: 1px solid var(--text-color-lightest);
+  .date {
+    .input-label-wrapper {
+      &.active {
+        .input-checkmark-wrapper {
+          input {
+            border-color: var(--text-color-light);
+          }
+          svg {
+            display: inline-block;
+          }
+        }
+      }
 
-        color: var(--text-color-lightest);
-        padding: 1rem 0;
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        &:last-child {
-          border: none;
+      .input-checkmark-wrapper {
+        height: 1.4rem;
+        width: 1.4rem;
+        input {
+          height: 100%;
+          width: 100%;
+
+          border: 1px solid var(--text-color-lightest);
+          border-radius: 3px;
+
+          position: absolute;
+          inset: 0;
+          cursor: pointer;
+        }
+        svg {
+          display: none;
+          position: absolute;
+          bottom: 50%;
+          left: 0;
+          transform: translate(0, 45%);
+
+          height: 1.4rem;
+          width: 1.4rem;
+          fill: var(--text-color-light);
         }
       }
     }
