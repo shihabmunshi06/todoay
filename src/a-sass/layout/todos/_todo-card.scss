@@ -4,16 +4,25 @@
   border-radius: 20px;
   border-bottom-right-radius: 14px;
 
-  transform: translate(0.4rem, 0.4rem);
+  // transform: translate(0.4rem, 0.4rem);
 
   &.top {
-    background-color: var(--orange-dark);
+    .todo-card {
+      // border: 1px solid var(--orange-dark);
+    }
+    // background-color: var(--orange-dark);
   }
   &.mid {
-    background-color: var(--yellow-dark);
+    .todo-card {
+      // border: 1px solid var(--yellow-dark);
+    }
+    // background-color: var(--yellow-dark);
   }
   &.low {
-    background-color: var(--green-dark);
+    .todo-card {
+      // border: 1px solid var(--green-dark);
+    }
+    // background-color: var(--green-dark);
   }
 
   &.complete {
@@ -30,15 +39,13 @@
   }
 
   .todo-card {
-    transform: translate(-0.4rem, -0.4rem);
+    // transform: translate(-0.4rem, -0.4rem);
 
     display: flex;
     flex-direction: column;
 
     height: 100%;
     padding: 0.6rem 1rem;
-
-    background-color: var(--background-color);
 
     border: 1px solid var(--text-color-lightest);
     border-radius: 10px;
